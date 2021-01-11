@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="dias" id="x" size="1">
+        <option value="310">0</option>
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+    </select>
+    
+    <button onclick="prueba()">hacer prueba</button>
+    <script>
+        var x;
+        var numero1 = [-6,-5,-4,-3,-2,-1,0]
+        var numero2 = [10, 60, 110, 160, 210, 260, 310]
+        function prueba() {
+            x = parseInt(document.getElementById("x").value);
+            //x2= parseInt(x);
+            console.log(x)
+            for (let i = 0; i < numero2.length; i++) {
+                if (x == numero2[i]) {
+                    var indice = numero2.indexOf(x);
+                    console.log(indice);
+                    x=numero1[indice];
+                    var suma = x + 1;
+                    console.log(x);
+                    console.log(suma);
+                    
+
+                }
+
+
+            }
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

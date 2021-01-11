@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Matriz Peyea</h1>
+    <canvas width="700" height="700" style="border: 1px solid #000000"></canvas>
+    <br>
+    <label for="x">¿En la solvencia, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pf1" size="1">
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+
+    </select>
+    <br>
+    <label for="">¿En el apalancamiento, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pf2" size="1">
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+    </select>
+    <br>
+    <label for="x">¿En la liquidez, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pf3" size="1">
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+    </select>
+    <br>
+    <label for="x">¿En el capital de trabajo, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pf4" size="1">
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+    </select>
+    <br>
+    <label for="x">¿En los riesgos implicitos del negocio, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pf5" size="1">
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+    </select>
+    <br>
+    <label for="x">¿En la facilidad de salir al mercado, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pf6" size="1">
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+    </select>
+    <br>
+    <label for="x">¿En los flujos de efectivo, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pf7" size="1">
+        <option value="260">1</option>
+        <option value="210">2</option>
+        <option value="160">3</option>
+        <option value="110">4</option>
+        <option value="60">5</option>
+        <option value="10">6</option>
+    </select>
+    <label for="x">¿En la abundancia, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pi1" size="1">
+        <option value="360">1</option>
+        <option value="410">2</option>
+        <option value="460">3</option>
+        <option value="510">4</option>
+        <option value="560">5</option>
+        <option value="610">6</option>
+    </select>
+    <br>
+    <label for="x">¿En el potencial de crecimiento, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pi2" size="1">
+        <option value="360">1</option>
+        <option value="410">2</option>
+        <option value="460">3</option>
+        <option value="510">4</option>
+        <option value="560">5</option>
+        <option value="610">6</option>
+    </select>
+    <br>
+    <label for="x">¿En el pconocimiento tecnologico, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pi3" size="1">
+        <option value="360">1</option>
+        <option value="410">2</option>
+        <option value="460">3</option>
+        <option value="510">4</option>
+        <option value="560">5</option>
+        <option value="610">6</option>
+    </select>
+    <br>
+    <label for="x">¿En la productividad, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pi4" size="1">
+        <option value="360">1</option>
+        <option value="410">2</option>
+        <option value="460">3</option>
+        <option value="510">4</option>
+        <option value="560">5</option>
+        <option value="610">6</option>
+    </select>
+    <br>
+    <label for="x">¿En la demanda, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pi5" size="1">
+        <option value="360">1</option>
+        <option value="410">2</option>
+        <option value="460">3</option>
+        <option value="510">4</option>
+        <option value="560">5</option>
+        <option value="610">6</option>
+    </select>
+    <br>
+    <label for="x">¿En la facilidad, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pi6" size="1">
+        <option value="360">1</option>
+        <option value="410">2</option>
+        <option value="460">3</option>
+        <option value="510">4</option>
+        <option value="560">5</option>
+        <option value="610">6</option>
+    </select>
+    <br>
+    <label for="x">¿En las regulaciones, como cree que esta su empresa, 1 a 6, de peor a mejor</label>
+    <select name="dias" id="pi7" size="1">
+        <option value="360">1</option>
+        <option value="410">2</option>
+        <option value="460">3</option>
+        <option value="510">4</option>
+        <option value="560">5</option>
+        <option value="610">6</option>
+    </select>
+    <button onclick="agresivo()">Enviar datos</button>
+
+    <script>
+        var lienzo = document.querySelector("canvas");
+        var ejex = lienzo.getContext("2d");
+        var ejey = lienzo.getContext("2d");
+        var lineax= lienzo.getContext("2d")
+        //var lineay= lienzo.getContext("2d")
+        var punto2 = lienzo.getContext("2d");
+        var linea = lienzo.getContext("2d");
+        var vector = lienzo.getContext("2d");
+        var pf1 = null;
+        var pf2 = null;
+        var pf3 = null;
+        var pf4 = null;
+        var pf5 = null;
+        var pf6 = null;
+        var pf7 = null;
+        var totalpf;
+        var pi1 = null;
+        var pi2 = null;
+        var pi3 = null;
+        var pi4 = null;
+        var pi5 = null;
+        var pi6 = null;
+        var pi7 = null;
+        var totalpi;
+        var y1 = null;
+        ejey.fillStyle = "cyan";
+        //ejex.fillRect(x,y,tamñodepuntox,tamañodepuntoy);
+        ejey.fillRect(300, 10, 10, 600);
+        ejex.fillStyle = "cyan";
+        ejex.fillRect(10, 300, 600, 10);
+        function agresivo() {
+            pf1 = document.getElementById("pf1").value;
+            pf2 = document.getElementById("pf2").value;
+            pf3 = document.getElementById("pf3").value;
+            pf4 = document.getElementById("pf4").value;
+            pf5 = document.getElementById("pf5").value;
+            pf6 = document.getElementById("pf6").value;
+            pf7 = document.getElementById("pf7").value;
+            totalpf = (parseInt(pf1) + parseInt(pf2) + parseInt(pf3) + parseInt(pf4) + parseInt(pf5) + parseInt(pf6) + parseInt(pf7));
+            var totalpfdiv = parseFloat(totalpf / 7);
+            var totalpfdiv2 = totalpfdiv + 2.5;
+            console.log(totalpfdiv);
+            pi1 = document.getElementById("pi1").value;
+            pi2 = document.getElementById("pi2").value;
+            pi3 = document.getElementById("pi3").value;
+            pi4 = document.getElementById("pi4").value;
+            pi5 = document.getElementById("pi5").value;
+            pi6 = document.getElementById("pi6").value;
+            pi7 = document.getElementById("pi7").value;
+            punto2.fillStyle = "black";
+            totalpi = (parseInt(pi1) + parseInt(pi2) + parseInt(pi3) + parseInt(pi4) + parseInt(pi5) + parseInt(pi6) + parseInt(pi7));
+            var totalpidiv = parseFloat(totalpi / 7);
+            var totalpidiv2 = totalpidiv + 2.5;
+            console.log(totalpidiv);
+            punto2.fillRect(totalpidiv, totalpfdiv, 5, 5);
+            lineax.fillRect(310,totalpfdiv,50,5)   
+            lineax.fillStyle="red";
+            //lineay.fillRect(totalpidiv,5,5,350)
+            //lineay.fillStyle="blue";
+            //linea.moveTo(x1, y1)izquierdal;
+            //linea.lineTo(x2, y2)derechal;
+            linea.moveTo(310, totalpfdiv2);
+            linea.lineTo(totalpidiv2, 300);
+            linea.stroke();
+            vector.moveTo(310, 300);
+            vector.lineTo(totalpidiv2, totalpfdiv2);
+            vector.stroke();
+
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
